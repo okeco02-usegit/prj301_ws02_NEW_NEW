@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Order</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Create new order</h2>
+        <form action="CreateOrderController" method="post">
+            Item ID &nbsp;&nbsp;&nbsp;
+            <input type="text" name="txtItemId" placeholder="e.g. B001" /><br/><br/>
+
+            Item Name
+            <input type="text" name="txtItemName" placeholder="e.g. Java Book" /><br/><br/>
+
+            Quantity &nbsp;
+            <input type="number" name="txtQuantity" min="1" value="1" /><br/><br/>
+
+            Unit Price
+            <input type="number" name="txtUnitPrice" min="0" step="0.01" value="0.00" /><br/><br/>
+
+            <input type="submit" value="Create" />
+            <input type="reset" value="Reset" />
+            &nbsp;
+            <a href="ListOrderController"><button type="button">Back to Orders</button></a>
+        </form>
+    </body>
+</html>
